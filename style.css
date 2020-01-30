@@ -1,0 +1,11 @@
+#title {
+    font-family: 'Monoton', cursive;
+    font-size: 200px;
+    color: red;
+}
+
+#body {
+    background-image: url("images/flopslap-1.png");
+    background-size: cover;
+    overflow: hidden;
+}
