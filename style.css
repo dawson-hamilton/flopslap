@@ -1,11 +1,31 @@
 #title {
     font-family: 'Monoton', cursive;
-    font-size: 200px;
-    color: red;
+    font-size: 40px;
+    color: purple;
 }
 
 #body {
-    background-image: url("images/flopslap-1.png");
-    background-size: cover;
     overflow: hidden;
+}
+
+#navbarDropdown {
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    color: orange;
+}
+
+#options {
+    font-family: 'Permanent Marker', cursive;
+    color: darkorange;
+    font-size: large;
+}
+#drop-options {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#carouselExampleSlidesOnly {
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
