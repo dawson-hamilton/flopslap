@@ -7,7 +7,10 @@ var nextimage = 0;
 doSlideshow();
 
 function doSlideshow() {
-    for (let index = 0; index < images.length; index++) {
-        $("#body").css('background-image', 'url("' + images[nextimage++] + '")')
-    }
+    if (nextimage >= images.length) { nextimage = 0; }
+    $("#body")
+        .css('background-image', 'url("' + images[nextimage++] + '")')
+        .fadeIn(500, function () {
+            setTimeout(doSlideshow, 1000);
+        });
 }
