@@ -32,8 +32,14 @@
 
 #card {
     font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
 }
 
 .card {
     background-color: dimgray;
+}
+
+.navbar {
+    height: 40px;
+    margin-bottom: 10px;
 }
