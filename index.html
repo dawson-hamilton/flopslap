@@ -27,7 +27,8 @@
                         target="blank">Shows</a>
                 </li>
                 <li class="nav-item">
-                    <a id="options" class="nav-link latest" href="#" onclick="return latestVideo();">Latest Video</a>
+                    <a id="options" class="nav-link latest" href="#" onclick="return latestVideo();" data-toggle="modal"
+                        data-target=".bd-example-modal-lg">Latest Video</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,7 +49,15 @@
 
     <img src="./images/flopslap-0.png" id="body">
 
-    <iframe width="1300" height="700" src="" frameborder="0" allowfullscreen class="invisible" id="video"></iframe>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <iframe width="1280" height="700" src="" frameborder="0" allowfullscreen class="invisible"
+                    id="video"></iframe>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md-2"></div>

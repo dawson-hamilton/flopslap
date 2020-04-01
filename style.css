@@ -61,9 +61,13 @@ body {
     z-index: -100;
 }
 
+.modal {
+    position: absolute;
+    left: 30%;
+}
+
 #video {
     position: absolute;
-    left: 17%;
-    top: 18%;
+    left: -25%;
     z-index: 200;
 }
