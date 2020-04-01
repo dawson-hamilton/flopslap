@@ -22,3 +22,15 @@ setInterval(function () {
         });
     if (imageNumber >= images.length) { imageNumber = 0 }
 }, 10000);
+
+function latestVideo() {
+    const queryUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCHWSmYmHrfyYlSUnx7DLQZg&maxResults=1&order=date&type=video&key=AIzaSyCQOcWlQCBGfQfp5RuHHvpnEWVHiyetIIk"
+    $.ajax({
+        url: queryUrl,
+        method: "GET"
+    }).then(function (response) {
+        console.log(response.items[0].id.videoId);
+        $("#video").removeClass("invisible");
+        $("#video").attr("src", `https://www.youtube.com/embed/${response.items[0].id.videoId}`)
+    });
+};

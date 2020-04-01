@@ -29,14 +29,6 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
-#carouselExampleSlidesOnly {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background-size: cover;
-}
-
 #card {
     font-family: 'Permanent Marker', cursive;
     font-size: 15px;
@@ -62,4 +54,16 @@ body {
 #jumbo {
     font-family: 'Permanent Marker', cursive;
     color: white;
+}
+
+.invisible {
+    visibility: hidden;
+    z-index: -100;
+}
+
+#video {
+    position: absolute;
+    left: 17%;
+    top: 18%;
+    z-index: 200;
 }
