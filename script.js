@@ -13,10 +13,10 @@ const images = [
 
 setInterval(function () {
     var b = $('#body');
-    $("#body").fadeOut(400, function () {
+    $("#body").fadeOut(500, function () {
         b.attr("src", "images/flopslap-" + imageNumber + ".png");
     })
-        .fadeIn(400, function () {
+        .fadeIn(500, function () {
             b.attr("src", "images/flopslap-" + imageNumber + ".png")
             imageNumber++;
         });
